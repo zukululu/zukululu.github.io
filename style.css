@@ -222,6 +222,20 @@ h1 {
 	background-image: url(https://cdn3.iconfinder.com/data/icons/line/36/arrow_left-512.png);
 	background-size: contain;
 }
+.mario {
+	height: 100%;
+	width: 100%;
+	grid-column: 5/span 2;
+	grid-row: 4;
+	background-image: url('https://i.gyazo.com/b8d02faea5e362be193996ec18e7e49c.png');
+	background-size: cover;
+}
+.mario h2 {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	font-size: 40px;
+}
 
 .empty {
 	height: 100%;
