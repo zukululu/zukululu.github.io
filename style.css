@@ -75,8 +75,8 @@ h1 {
 }
 
 .icon {
-	height: 80px;
-	width: 80px;
+	height: 40px;
+	width: 40px;
 	background-size: cover;
 }
 
@@ -85,7 +85,7 @@ h1 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: repeat(7,1fr);
-
+	position: relative;
 }
 
 .js {
@@ -130,6 +130,7 @@ h1 {
 	align-items: center;
 	background-image: url(http://static-assets.generalassemb.ly/logos/generalassembly-open-graph.png);
 	background-size: 100%;
+	background-repeat: no-repeat;
 	border-top: 1px solid #d4d2d1;
 	border-right: 1px solid #d4d2d1;
 }
@@ -221,6 +222,56 @@ h1 {
 	height: 100px;
 	background-image: url(https://cdn3.iconfinder.com/data/icons/line/36/arrow_left-512.png);
 	background-size: contain;
+}
+
+
+.mario {
+	height: 100%;
+	width: 100%;
+	grid-column: 5/span 2;
+	grid-row: 4;
+	background-image: url('https://i.gyazo.com/b8d02faea5e362be193996ec18e7e49c.png');
+	background-size: cover;
+}
+.mario:hover {
+	height: 300px;
+	width: 350px;
+	z-index: 99999;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+.mario:hover h2 {
+	padding-top: 0px;	
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+.mario p {
+	color: white;
+}
+.mario h2 {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	font-size: 40px;
+	color: white;
+}
+.mario-buttons {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.link-button {
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	border-radius: 50%;
 }
 
 .empty {
