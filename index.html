@@ -1,46 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Jefferson Duong Portfolio</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
-	<link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' type='text/css' href='animate.css'>
+  <link rel='stylesheet' href='style.css'>
+  <title>Document</title>
 </head>
 <body>
-<div class="container">
-	<h1 class="name">Jefferson Duong</h1>
-	<div class="social-media">
-		<a href="https://github.com/zukululu" target="_blank" class="icon" style="background-image: url(https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67)"></a>
-		<a href="https://www.linkedin.com/in/jefferson-duong-5857a5167/" target="_blank" class="icon" style="background-image: url(https://www.shareicon.net/data/2015/09/24/106654_network_512x512.png)"></a>
-		<a href="mailto:jeffdeeeee21@gmail.com?Subject=Hello%20Jefferson" target="_blank" class="icon" style="background-image: url(https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/gmail.png)"></a>
-	</div>
+  <div class='container' id='splash'>
+    <div class='box'>
+      <!-- <div id='triangle-down'></div> -->
+      <h2>Hello!</h2>
+      <div class='word-box'>
+        <p>My name is Jefferson Duong. I am a Web Developer, a veteran, and a fitness enthusiast!</p>
+        <br>
+        <p> I love creating things: drawings, programs, and websites.</p>
+      </div>
+    </div>
+    <div class='box' id='projects'>
+      <h2>Projects</h2>
+      <div class='gif-container'>
+          <p>Here are some of the projects that I have made!</p>
+          <div class='gif-buttons'>
+            <button class='animated infinite heartBeat' onclick="plusDivs(-1)">&#10094;</button>
+            <button class='animated infinite heartBeat' onclick="plusDivs(+1)">&#10095;</button>
+          </div>
+          <div class='slides w3-animate-left gif-box' onclick='currentDiv(1)'>
+              <div class='gif-links'>
+                <a href='https://zukululu.github.io/trivia-game/' target='_blank' class='animated jackInTheBox'>Mario Trivia</a>
+                <a href='https://github.com/zukululu/trivia-game' target='_blank' class='animated jackInTheBox'>Github Repo</a>
+              </div>
+              <img src='./assets/mario.gif'/>
+          </div> 
 
-	<div class="js"><h2>JS</h2></div>
-	<div class="html"><h2>HTML</h2></div>
-	<div class="css"><h2>CSS</h2></div>
-	
-	<a href="https://generalassemb.ly/" target="_blank" class="ga"></a>
-	<a href='https://zukululu.github.io/trivia-game/' target='_blank' class="mario"><h2>
-		Mario Trivia
-	</h2></a>
+          <div class='slides w3-animate-left gif-box' onclick='currentDiv(1)'>
+              <div class='gif-links'>
+                <a href='https://workout-wonder.herokuapp.com/' target='_blank' class='animated jackInTheBox'>Workout Wonder</a>
+                <a href='https://github.com/zukululu/workout-wonder' target='_blank' class='animated jackInTheBox'>Github Repo</a>
+              </div>
+              <img src='./assets/ww.gif'/>
+          </div> 
 
-	<div class='mario'><h2>
-		Mario Trivia
-	</h2>
-	<div class='mario-buttons'></div>	
-	</div>
-
-
-	<div class="empty"></div>
-	<div class="empty-2"></div>
-	<div class="empty-3"></div>
-	<div class="empty-4"></div>
-	<div class="empty-5"></div>
-	<div class="empty-6"></div>
-	<div class="empty-7"></div>
-
-	<a href="about.html" class="about-me"><h2>About Me</h2>
-	</a>
-</div>
-<script src='../portfolio.js'></script>
+          <div class='slides w3-animate-left gif-box' onclick='currentDiv(1)'>
+              <div class='gif-links'>
+                <a href='http://greedy-lettuce.surge.sh/' target='_blank' class='animated jackInTheBox'>Lettuce Meet</a>
+                <a href='https://github.com/Sun-Mountain/MERN_EventCalendar_FrontEnd' target='_blank' class='animated jackInTheBox'>Front End Github Repo</a>
+                <a href='https://github.com/zukululu/eventCalendar_backEnd' target='_blank' class='animated jackInTheBox'>Back End Github Repo</a>
+              </div>
+              <img src='./assets/let.gif'/>
+          </div> 
+      </div>
+    </div>
+    <div class='box' id='about'>
+      <h2>About</h2>
+      <div class='word-box'>
+        <img src='./assets/pfp.jpeg' />
+        <p>
+          I love spending my time drawing or exercising. I enjoy viewing and approaching things from new angles, whether it be drawing a figure with a different view or planning a project with different strategies!
+        </p>
+        <br>
+        <p>Javascript | MongoDB | Express | React | Node.js | HTML/CSS | Python | Django | PostgreSQL</p>
+      </div>
+    </div>
+    <div class='box' id='contact'>
+      <h2>Contact</h2>
+      <div class='icon-box animated infinite pulse' id='resume'>
+        <a href='https://drive.google.com/file/d/1f1VXHd3Gez055XqYiSbdAu-FkJLrkOEk/view?usp=sharing' target='_blank'>
+          <img src="./assets/resume.png" />
+        </a>
+      </div>
+      <div class='word-box'>
+        <div class='icon-holder'>
+          <div class='icon-box animated infinite tada'>
+            <a href='https://www.linkedin.com/in/jefferson-duong/' target='_blank'>
+              <img src='./assets/link-logo.png' />
+            </a>
+          </div>
+          <div class='icon-box animated infinite tada'>
+            <a href='mailto:duong.jefferson@gmail.com?Subject=Hello,%20Jefferson!'>
+              <img src='./assets/mail.png' />
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2></h2>
+    </div>
+  </div>
+  <script src='script.js'></script>
 </body>
+<footer>
+  <div class='footer-bar'>
+    <a href='#splash'>Home</a>
+    <a href='#projects'>Projects</a>
+    <a href='#about'>About</a>
+    <a href='#contact'>Contact</a>
+  </div>
+</footer>
 </html>
