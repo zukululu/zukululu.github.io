@@ -184,3 +184,8 @@ footer a {
   text-decoration: none;
   margin: 0 1em;
 }
+
+.projectDesc {
+  font-size: 1.2em;
+  padding: 0.6em;
+}
